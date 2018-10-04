@@ -1,29 +1,25 @@
-# components
+# MakaZilla Components
 
 > 
 
-[![NPM](https://img.shields.io/npm/v/components.svg)](https://www.npmjs.com/package/components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@makazilla/components.svg)](https://www.npmjs.com/package/@makazilla/components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save components
+npm install --save @makazilla/components
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'components'
+import MyComponent from '@makazilla/components'
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+export default () => (
+  <MyComponent />
+)
 ```
 
 ## License
