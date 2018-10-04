@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ExampleComponent from '@makazilla/components'
+import ExampleComponent from 'components'
 
 export default () => (
   <div>
