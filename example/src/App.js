@@ -1,9 +1,13 @@
 import React from 'react'
 
-import ExampleComponent from 'components'
+import { Button } from 'components'
 
 export default () => (
   <div>
-    <ExampleComponent text='Modern React component module' />
+    <Button>Button Default</Button>
+    <br />
+    <Button theme="primary">Button Primary</Button>
+    <br />
+    <Button theme="secondary">Button Secondary</Button>
   </div>
 )
