@@ -1,29 +1,15 @@
 @import './theme.css';
 
+.container {
+  width: var(--grid-container);
+}
+
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
 }
 
 .container-fluid {
-  padding-right: var(--grid-outer-margin, 2rem);
-  padding-left: var(--grid-outer-margin, 2rem);
-}
-
-@media only screen and (min-width: 48em) {
-  .container {
-    width: var(--grid-container-sm, 46rem);
-  }
-}
-
-@media only screen and (min-width: 64em) {
-  .container {
-    width: var(--grid-container-md, 61rem);
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  .container {
-    width: var(--grid-container-lg, 71rem);
-  }
+  padding-right: var(--grid-outer-margin);
+  padding-left: var(--grid-outer-margin);
 }
