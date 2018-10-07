@@ -1,13 +1,29 @@
 :root {
-  --theme-text: #000000;
-  --theme-text-light: #ffffff;
-  --theme-default: #b0bec5;
-  --theme-default-light: #e2f1f8;
-  --theme-default-dark: #808e95;
-  --theme-primary: #0091ea;
-  --theme-primary-light: #64c1ff;
-  --theme-primary-dark: #0064b7;
-  --theme-secondary: #00bfa5;
-  --theme-secondary-light: #5df2d6;
-  --theme-secondary-dark: #008e76;
+  --color-text: #000000;
+  --color-text-light: #ffffff;
+  --color-default: #b0bec5;
+  --color-default-light: #e2f1f8;
+  --color-default-dark: #808e95;
+  --color-primary: #0091ea;
+  --color-primary-light: #64c1ff;
+  --color-primary-dark: #0064b7;
+  --color-secondary: #00bfa5;
+  --color-secondary-light: #5df2d6;
+  --color-secondary-dark: #008e76;
+
+  --grid-gutter-width: 1rem;
+  --grid-outer-margin: 2rem;
+  --grid-gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
+  --grid-half-gutter-width: calc((var(--gutter-width) * 0.5));
+  --grid-xs-min: 30;
+  --grid-sm-min: 48;
+  --grid-md-min: 64;
+  --grid-lg-min: 75;
+  --grid-screen-xs-min: var(--xs-min)em;
+  --grid-screen-sm-min: var(--sm-min)em;
+  --grid-screen-md-min: var(--md-min)em;
+  --grid-screen-lg-min: var(--lg-min)em;
+  --grid-container-sm: calc(var(--sm-min) + var(--gutter-width));
+  --grid-container-md: calc(var(--md-min) + var(--gutter-width));
+  --grid-container-lg: calc(var(--lg-min) + var(--gutter-width));
 }
