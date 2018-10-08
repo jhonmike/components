@@ -1,33 +1,36 @@
 @import './theme.css';
 
 .btn {
-  background-color:var(--color-default);
-  border-radius:3px;
-  border: 0;
-  cursor:pointer;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: var(--color-default);
+  border: 0 solid transparent;
   color:var(--color-text);
   padding:9px 23px;
   text-decoration:none;
 }
 
-.btn:hover {
-  background-color:var(--color-default-light);
+.btn:hover, .btn:focus {
+  background-color:var(--color-default-dark);
+  text-decoration: none;
 }
 
 .btn-primary {
   background-color:var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-text-light);
 }
 
-.btn-primary:hover {
-  background-color:var(--color-primary-light);
+.btn-primary:hover, .btn-primary:focus {
+  background-color:var(--color-primary-dark);
 }
 
 .btn-secondary {
   background-color:var(--color-secondary);
-  color: var(--color-text);
+  color: var(--color-text-light);
 }
 
-.btn-secondary:hover {
-  background-color:var(--color-secondary-light);
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color:var(--color-secondary-dark);
 }
