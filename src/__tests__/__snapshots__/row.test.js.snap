@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row Component renders component 1`] = `
+<div
+  className="row"
+>
+  Row
+</div>
+`;
