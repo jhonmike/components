@@ -11,7 +11,9 @@
   --color-secondary-light: #5df2d6;
   --color-secondary-dark: #008e76;
 
+  --grid-gutter-width: 1rem;
   --grid-outer-margin: 2rem;
+  --grid-gutter-compensation: calc((var(--grid-gutter-width) * 0.5) * -1);
   --grid-container: 31em;
 }
 
