@@ -4,10 +4,9 @@ import PropTypes from 'prop-types'
 
 import styles from './col.css'
 
-const Col = props => {
+const prepareProps = (props) => {
   const {
     className,
-    children,
     ...otherProps
   } = props
 
@@ -35,13 +34,21 @@ const Col = props => {
       return classe
     })
 
-  const classes = classnames(
-    ...sizes,
-    className
-  )
+  return {
+    ...otherProps,
+    className: classnames(...sizes, className)
+  }
+}
+
+const Col = props => {
+  const {
+    className,
+    children,
+    ...otherProps
+  } = prepareProps(props)
 
   return (
-    <div {...otherProps} className={classes}>
+    <div {...otherProps} className={className}>
       {children}
     </div>
   )

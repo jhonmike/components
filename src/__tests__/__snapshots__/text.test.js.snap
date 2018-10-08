@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Component renders Headings component 1`] = `
+<h1
+  className="h1"
+>
+  Text
+</h1>
+`;
+
+exports[`Text Component renders component 1`] = `
+<p
+  className=""
+>
+  Text
+</p>
+`;

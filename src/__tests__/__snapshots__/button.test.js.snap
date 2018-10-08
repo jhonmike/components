@@ -2,7 +2,7 @@
 
 exports[`Button Component renders default component 1`] = `
 <button
-  className="btn btn-default"
+  className="btn"
 >
   Button Default
 </button>
