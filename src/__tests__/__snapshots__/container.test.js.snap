@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Component renders component 1`] = `
+<div
+  className="container"
+>
+  Container
+</div>
+`;
+
+exports[`Container Component renders fluid container component 1`] = `
+<div
+  className="container-fluid"
+>
+  Container Fluid
+</div>
+`;

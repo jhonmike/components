@@ -2,7 +2,7 @@
 
 exports[`Button Component renders default component 1`] = `
 <button
-  className=""
+  className="btn btn-default"
 >
   Button Default
 </button>
@@ -10,7 +10,7 @@ exports[`Button Component renders default component 1`] = `
 
 exports[`Button Component renders primary component 1`] = `
 <button
-  className=""
+  className="btn btn-primary"
 >
   Button Primary
 </button>
@@ -18,7 +18,7 @@ exports[`Button Component renders primary component 1`] = `
 
 exports[`Button Component renders secondary component 1`] = `
 <button
-  className=""
+  className="btn btn-secondary"
 >
   Button Secondary
 </button>

@@ -13,8 +13,8 @@
     "npm": ">=5"
   },
   "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
+    "test": "cross-env CI=1 yarn run test:watch",
+    "test:watch": "react-scripts test --env=jsdom --moduleNameMapper='{\"^.+\\\\.(css|scss)$\":\"identity-obj-proxy\"}'",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
@@ -45,6 +45,9 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^4.0.0",
     "gh-pages": "^2.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "postcss-calc": "^6.0.2",
+    "postcss-css-variables": "^0.10.0",
     "postcss-import": "^12.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

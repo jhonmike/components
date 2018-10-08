@@ -1,0 +1,15 @@
+@import './theme.css';
+
+.container {
+  width: var(--grid-container);
+}
+
+.container-fluid, .container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: var(--grid-outer-margin);
+  padding-left: var(--grid-outer-margin);
+}

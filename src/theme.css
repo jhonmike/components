@@ -1,13 +1,34 @@
 :root {
-  --theme-text: #000000;
-  --theme-text-light: #ffffff;
-  --theme-default: #b0bec5;
-  --theme-default-light: #e2f1f8;
-  --theme-default-dark: #808e95;
-  --theme-primary: #0091ea;
-  --theme-primary-light: #64c1ff;
-  --theme-primary-dark: #0064b7;
-  --theme-secondary: #00bfa5;
-  --theme-secondary-light: #5df2d6;
-  --theme-secondary-dark: #008e76;
+  --color-text: #000000;
+  --color-text-light: #ffffff;
+  --color-default: #b0bec5;
+  --color-default-light: #e2f1f8;
+  --color-default-dark: #808e95;
+  --color-primary: #0091ea;
+  --color-primary-light: #64c1ff;
+  --color-primary-dark: #0064b7;
+  --color-secondary: #00bfa5;
+  --color-secondary-light: #5df2d6;
+  --color-secondary-dark: #008e76;
+
+  --grid-outer-margin: 2rem;
+  --grid-container: 31em;
+}
+
+@media only screen and (min-width: 75em) {
+  :root {
+    --grid-container: 76em;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  :root {
+    --grid-container: 65em;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  :root {
+    --grid-container: 49em;
+  }
 }

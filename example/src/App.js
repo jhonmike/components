@@ -1,13 +1,18 @@
 import React from 'react'
 
-import { Button } from 'components'
+import { Container, Button } from 'components'
 
 export default () => (
-  <div>
-    <Button>Button Default</Button>
-    <br />
-    <Button theme="primary">Button Primary</Button>
-    <br />
-    <Button theme="secondary">Button Secondary</Button>
-  </div>
+  <React.Fragment>
+    <Container>
+      <Button>Button Default</Button>
+      <br />
+      <Button theme="primary">Button Primary</Button>
+      <br />
+      <Button theme="secondary">Button Secondary</Button>
+    </Container>
+    <Container fluid>
+      <Button>Button Default</Button>
+    </Container>
+  </React.Fragment>
 )

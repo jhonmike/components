@@ -1,32 +1,33 @@
 @import './theme.css';
 
 .btn {
-  background-color:var(--theme-default);
+  background-color:var(--color-default);
   border-radius:3px;
   border: 0;
   cursor:pointer;
-  color:var(--theme-text);
+  color:var(--color-text);
   padding:9px 23px;
   text-decoration:none;
 }
+
 .btn:hover {
-  background-color:var(--theme-default-light);
+  background-color:var(--color-default-light);
 }
 
 .btn-primary {
-  background-color:var(--theme-primary);
-  color: var(--theme-text);
+  background-color:var(--color-primary);
+  color: var(--color-text);
 }
 
 .btn-primary:hover {
-  background-color:var(--theme-primary-light);
+  background-color:var(--color-primary-light);
 }
 
 .btn-secondary {
-  background-color:var(--theme-secondary);
-  color: var(--theme-text);
+  background-color:var(--color-secondary);
+  color: var(--color-text);
 }
 
 .btn-secondary:hover {
-  background-color:var(--theme-secondary-light);
+  background-color:var(--color-secondary-light);
 }
