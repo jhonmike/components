@@ -14,23 +14,12 @@
   --grid-gutter-width: 1rem;
   --grid-outer-margin: 2rem;
   --grid-gutter-compensation: calc((var(--grid-gutter-width) * 0.5) * -1);
-  --grid-container: 31em;
-}
-
-@media only screen and (min-width: 75em) {
-  :root {
-    --grid-container: 76em;
-  }
-}
-
-@media only screen and (min-width: 64em) {
-  :root {
-    --grid-container: 65em;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-  :root {
-    --grid-container: 49em;
-  }
+  --grid-half-gutter-width: calc((var(--grid-gutter-width) * 0.5));
+  --grid-xs-min: 30;
+  --grid-sm-min: 48;
+  --grid-md-min: 64;
+  --grid-lg-min: 75;
+  --grid-container-sm: calc(var(--gridsm-min) + var(--grid-gutter-width));
+  --grid-container-md: calc(var(--gridmd-min) + var(--grid-gutter-width));
+  --grid-container-lg: calc(var(--gridlg-min) + var(--grid-gutter-width));
 }

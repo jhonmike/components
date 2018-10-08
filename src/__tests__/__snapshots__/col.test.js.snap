@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Col Component renders col with auto with 1`] = `
+<div
+  className="md"
+/>
+`;
+
+exports[`Col Component renders col with offset 1`] = `
+<div
+  className="xs-offset-6 xs-6"
+  xsOffset={6}
+/>
+`;
+
+exports[`Col Component renders responsive component 1`] = `
+<div
+  className="xs-12 sm-4 md-3 lg-2"
+>
+  Col
+</div>
+`;
