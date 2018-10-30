@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "extends": [
     "standard",
-    "standard-react"
+    "standard-react",
+    "react-hooks"
   ],
   "env": {
     "es6": true
@@ -15,6 +16,7 @@
   },
   "rules": {
     "space-before-function-paren": 0,
-    "react/jsx-boolean-value": 0
+    "react/jsx-boolean-value": 0,
+    "react-hooks/rules-of-hooks": "error"
   }
 }
