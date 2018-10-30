@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Button, Row, Col, Text } from 'components'
+import { Container, Button, Row, Col, Text, Input } from 'components'
 
 export default () => (
   <React.Fragment>
@@ -19,6 +19,25 @@ export default () => (
         </Col>
         <Col xs={12} sm={4} md={3} lg={2}>
           <Button theme='secondary'>Button Secondary</Button>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs>
+          <Text tagName='h1'>Inputs</Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={4} md={3} lg={2}>
+          <Input type='text' />
+        </Col>
+        <Col xs={12} sm={4} md={3} lg={2}>
+          <Input type='email' />
+        </Col>
+        <Col xs={12} sm={4} md={3} lg={2}>
+          <Input type='checkbox' />
+        </Col>
+        <Col xs={12} sm={4} md={3} lg={2}>
+          <Input type='radio' />
         </Col>
       </Row>
     </Container>
