@@ -17,6 +17,7 @@
     "test:watch": "react-scripts test --env=jsdom --moduleNameMapper='{\"^.+\\\\.(css|scss)$\":\"identity-obj-proxy\"}'",
     "build": "rollup -c",
     "start": "rollup -c -w",
+    "format": "prettier --write 'src/**/*.{js,css}'",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
@@ -50,6 +51,7 @@
     "postcss-calc": "7.0.1",
     "postcss-css-variables": "0.11.0",
     "postcss-import": "12.0.1",
+    "prettier": "1.14.3",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-scripts": "2.0.5",

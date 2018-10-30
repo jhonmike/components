@@ -5,21 +5,10 @@ import PropTypes from 'prop-types'
 import styles from './text.css'
 
 const TextC = props => {
-  const {
-    className,
-    tagName,
-    children,
-    ...otherProps
-  } = props
-
+  const { className, tagName, children, ...otherProps } = props
   const tagNames = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-  const tag = tagNames
-    .filter(key => key === tagName)[0]
-
-  const classes = classnames(
-    tag ? styles[tag] : null,
-    className
-  )
+  const tag = tagNames.filter(key => key === tagName)[0]
+  const classes = classnames(tag ? styles[tag] : null, className)
 
   return React.createElement(
     tagName || 'p',
@@ -31,7 +20,7 @@ const TextC = props => {
 TextC.propTypes = {
   className: PropTypes.string,
   tagName: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default TextC

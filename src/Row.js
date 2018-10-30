@@ -5,16 +5,8 @@ import PropTypes from 'prop-types'
 import styles from './row.css'
 
 const Row = props => {
-  const {
-    className,
-    children,
-    ...otherProps
-  } = props
-
-  const classes = classnames(
-    styles.row,
-    className
-  )
+  const { className, children, ...otherProps } = props
+  const classes = classnames(styles.row, className)
 
   return (
     <div {...otherProps} className={classes}>
@@ -25,7 +17,7 @@ const Row = props => {
 
 Row.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default Row

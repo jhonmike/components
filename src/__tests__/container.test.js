@@ -4,9 +4,7 @@ import Container from '../Container'
 
 describe('Container Component', () => {
   it('renders component', () => {
-    const tree = renderer
-      .create(<Container>Container</Container>)
-      .toJSON()
+    const tree = renderer.create(<Container>Container</Container>).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
