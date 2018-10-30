@@ -4,11 +4,8 @@ import PropTypes from 'prop-types'
 
 import styles from './col.css'
 
-const prepareProps = (props) => {
-  const {
-    className,
-    ...otherProps
-  } = props
+const prepareProps = props => {
+  const { className, ...otherProps } = props
 
   const classMap = {
     xs: 'xs',
@@ -20,15 +17,16 @@ const prepareProps = (props) => {
     smOffset: 'sm-offset',
     mdOffset: 'md-offset',
     lgOffset: 'lg-offset',
-    xlOffset: 'xl-offset'
+    xlOffset: 'xl-offset',
   }
 
   const sizes = Object.keys(props)
     .filter(key => classMap[key])
     .map(key => {
-      const classe = typeof props[key] === 'number'
-        ? styles[`${classMap[key]}-${props[key]}`]
-        : styles[classMap[key]]
+      const classe =
+        typeof props[key] === 'number'
+          ? styles[`${classMap[key]}-${props[key]}`]
+          : styles[classMap[key]]
 
       delete otherProps[classMap[key]]
       return classe
@@ -36,16 +34,12 @@ const prepareProps = (props) => {
 
   return {
     ...otherProps,
-    className: classnames(...sizes, className)
+    className: classnames(...sizes, className),
   }
 }
 
 const Col = props => {
-  const {
-    className,
-    children,
-    ...otherProps
-  } = prepareProps(props)
+  const { className, children, ...otherProps } = prepareProps(props)
 
   return (
     <div {...otherProps} className={className}>
@@ -66,7 +60,7 @@ Col.propTypes = {
   mdOffset: PropTypes.number,
   lgOffset: PropTypes.number,
   xlOffset: PropTypes.number,
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default Col

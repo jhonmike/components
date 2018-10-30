@@ -4,13 +4,8 @@ import PropTypes from 'prop-types'
 
 import styles from './button.css'
 
-const prepareProps = (props) => {
-  const {
-    className,
-    theme,
-    ...otherProps
-  } = props
-
+const prepareProps = props => {
+  const { className, theme, ...otherProps } = props
   const classes = classnames(
     styles.btn,
     theme ? styles[`btn-${theme}`] : null,
@@ -19,17 +14,12 @@ const prepareProps = (props) => {
 
   return {
     ...otherProps,
-    className: classes
+    className: classes,
   }
 }
 
 const Button = props => {
-  const {
-    className,
-    theme,
-    children,
-    ...otherProps
-  } = prepareProps(props)
+  const { className, theme, children, ...otherProps } = prepareProps(props)
 
   return (
     <button {...otherProps} className={className}>
@@ -40,10 +30,8 @@ const Button = props => {
 
 Button.propTypes = {
   className: PropTypes.string,
-  theme: PropTypes.oneOf([
-    'primary', 'secondary'
-  ]),
-  children: PropTypes.node
+  theme: PropTypes.oneOf(['primary', 'secondary']),
+  children: PropTypes.node,
 }
 
 export default Button
