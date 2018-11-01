@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import styles from './input.css'
 
 const Input = props => {
-  console.log(styles);
   const { className, type, ...otherProps } = props
 
   const classes = classnames(
