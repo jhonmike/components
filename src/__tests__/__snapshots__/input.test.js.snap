@@ -10,7 +10,7 @@ exports[`Input Component renders checkbox component 1`] = `
 
 exports[`Input Component renders email component 1`] = `
 <input
-  className=""
+  className="simple-input"
   type="email"
   value=""
 />
@@ -28,7 +28,7 @@ exports[`Input Component renders radio component 1`] = `
 
 exports[`Input Component renders text component 1`] = `
 <input
-  className=""
+  className="simple-input"
   type="text"
   value=""
 />

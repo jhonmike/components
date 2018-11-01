@@ -2,13 +2,14 @@ import React from 'react'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
-// import styles from './input.css'
+import styles from './input.css'
 
 const Input = props => {
+  console.log(styles);
   const { className, type, ...otherProps } = props
 
   const classes = classnames(
-    // styles.input,
+    isSimpleInput(type) ? styles['simple-input'] : null,
     className
   )
 
@@ -23,3 +24,7 @@ Input.propTypes = {
 }
 
 export default Input
+
+function isSimpleInput(type) {
+  return ['text', 'email', 'password'].includes(type)
+}
