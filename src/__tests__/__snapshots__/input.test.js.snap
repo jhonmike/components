@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component renders checkbox component 1`] = `
+<input
+  checkbox={false}
+  className=""
+  type="checkbox"
+/>
+`;
+
+exports[`Input Component renders email component 1`] = `
+<input
+  className="simple-input"
+  type="email"
+  value=""
+/>
+`;
+
+exports[`Input Component renders radio component 1`] = `
+<input
+  checked={true}
+  className=""
+  name="gender"
+  type="radio"
+  value="male"
+/>
+`;
+
+exports[`Input Component renders text component 1`] = `
+<input
+  className="simple-input"
+  type="text"
+  value=""
+/>
+`;

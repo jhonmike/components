@@ -1,0 +1,22 @@
+.simple-input {
+  display: flex;
+  overflow-y: scroll;
+  padding: 1px;
+}
+.simple-input input {
+  margin: 0 .25rem;
+  min-width: 125px;
+  border: 1px solid #eee;
+  border-left: 3px solid;
+  border-radius: 5px;
+  transition: border-color .5s ease-out;
+}
+.simple-input input:optional {
+  border-left-color: #999;
+}
+.simple-input input:required {
+  border-left-color: palegreen;
+}
+.simple-input input:invalid {
+  border-left-color: salmon;
+}
