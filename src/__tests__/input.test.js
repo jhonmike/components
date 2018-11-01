@@ -16,13 +16,13 @@ describe('Input Component', () => {
   })
 
   it('renders checkbox component', () => {
-    const tree = renderer.create(<Input type="checkbox" value={''} />).toJSON()
+    const tree = renderer.create(<Input type="checkbox" checkbox={false} />).toJSON()
 
     expect(tree).toMatchSnapshot()
   })
 
   it('renders radio component', () => {
-    const tree = renderer.create(<Input type="radio" value={''} />).toJSON()
+    const tree = renderer.create(<Input type="radio" name="gender" value="male" checked={true} />).toJSON()
 
     expect(tree).toMatchSnapshot()
   })

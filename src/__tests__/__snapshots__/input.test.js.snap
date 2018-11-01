@@ -2,9 +2,9 @@
 
 exports[`Input Component renders checkbox component 1`] = `
 <input
+  checkbox={false}
   className=""
   type="checkbox"
-  value=""
 />
 `;
 
@@ -18,9 +18,11 @@ exports[`Input Component renders email component 1`] = `
 
 exports[`Input Component renders radio component 1`] = `
 <input
+  checked={true}
   className=""
+  name="gender"
   type="radio"
-  value=""
+  value="male"
 />
 `;
 
