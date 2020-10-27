@@ -1,4 +1,4 @@
-import React from 'react'
+import { createElement } from 'react';
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
@@ -10,11 +10,11 @@ const Text = (props) => {
   const tag = tagNames.filter((key) => key === tagName)[0]
   const classes = classnames(tag ? styles[tag] : null, className)
 
-  return React.createElement(
+  return createElement(
     tagName || 'p',
     { ...otherProps, className: classes },
     children
-  )
+  );
 }
 
 Text.propTypes = {
